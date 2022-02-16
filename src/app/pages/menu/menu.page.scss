@@ -1,0 +1,27 @@
+.perfil{
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+.imagen
+{
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.imagen > .img-perfil{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    justify-content: center;
+    align-content: center;
+}
+.nombre > p{
+    margin-left: 7px;
+    margin-top: 30px;
+    font-size: 22px;
+}

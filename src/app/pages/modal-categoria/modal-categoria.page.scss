@@ -1,0 +1,58 @@
+ion-content{
+    --ion-background-color:#ffffff;
+}
+
+.searchbar{
+    background-color: #2C33FF;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 90%;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow:  7px 7px 14px #d9d9d9,
+             -7px -7px 14px #ffffff;
+
+}
+
+ion-searchbar{
+    --ion-background-color:#2C33FF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.main
+{
+    height: 150px;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-empresa
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 95%;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    box-shadow:  6px 6px 12px #c2bed9,
+    -6px -6px 12px #ffffff;   
+}
+
+.div1 > .img-empresa
+{
+    width: 80%;
+    height: 120px;
+    border-radius: 20px;
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+.div2 > p{
+    padding-top: 25%;
+}

@@ -1,0 +1,184 @@
+ion-content{
+    --ion-background-color:#ffffff;
+}
+
+ion-list{
+    --ion-item-background:#2C33FF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+ion-item{
+    --ion-item-background:#2C33FF;
+    width: 100%;
+}
+.searchbar{
+    background-color: #2C33FF;
+    border-radius: 30px;
+    width: 100%;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow:  6px 6px 12px #d9d9d9,
+    -6px -6px 12px #ffffff;
+
+}
+
+ion-searchbar{
+    --ion-background-color:#2C33FF;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.categoria-list{
+    height: 200px;
+}
+
+.list-empresas{
+    margin-top: 10px;
+
+}
+
+
+.categoria{
+    margin-left: 5px;
+    border-radius: 20px;
+    height: 90px;
+    width: 97%;
+    margin-left: auto; 
+    margin-right: auto;
+    //background-color: #2C33FF;
+    //box-shadow:  7px 7px 14px #d9d9d9,
+    //         -7px -7px 14px #ffffff;
+
+}
+
+.list-promociones{
+    height: 200px;
+    margin-top: 30px;
+}
+
+.promociones{
+    height: 200px;
+    width: 97%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.sub_promo{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 250px;
+    height: 180px;
+    padding-top: 8px;
+    
+}
+
+.image_promo{
+    width: 250px;
+    height: 180px;
+    border-radius: 20px;    
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+
+}
+
+.ruleta-promos{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;    
+    padding-top: 3px;
+}
+ion-segment{
+    //background-color: red;
+    height: 97%;
+    
+}
+.ruleta{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+.sub_categoria{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 2px;
+    background: linear-gradient(rgba(#9384b721, 0.527), rgba(#151757, 0.932)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPrMpCbLfpZWwGCsRGFdDqvzWqiYPJr5uiA&usqp=CAU");
+    height: 120px;
+    width: 150px;
+    border-radius: 6%;
+    box-shadow:  8px 8px 16px #bebebe,
+             -8px -8px 16px #ffffff;
+    
+}
+
+
+
+.silla{
+    height: 100px;
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: linear-gradient(rgba(3, 0, 0, 0.527), rgba(0, 0, 0, 0.932)), url("https://lh3.googleusercontent.com/proxy/XPgqDfUyv-gTTny-wk5BDytVX5oC341gSOZqHLwLh9_gR0K51Nd2Qd09FY6xWhkeqhunZYrHmXnpurHd3muDqGvRrp83Rc214oRiBydwegg");
+    border-radius: 6%;
+
+}
+.mesa{
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(rgba(3, 0, 0, 0.527), rgba(0, 0, 0, 0.932)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPrMpCbLfpZWwGCsRGFdDqvzWqiYPJr5uiA&usqp=CAU");
+    border-radius: 6%;
+}
+.velador{
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(rgba(3, 0, 0, 0.527), rgba(0, 0, 0, 0.932)), url("http://cdn.shopify.com/s/files/1/2596/6404/products/VeladoresAtacamaUlmo_ISO_FONDOBLANCO3_grande.jpg?v=1600205842");
+    border-radius: 6%;
+}
+
+ion-avatar{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 80px;
+    width: 80px;
+}
+
+h3{
+    padding-top: 20%;
+    color: white;
+}
+.list-empresas{
+    height: 100%;
+    margin-top: 100px;
+}
+
+.main
+{
+    height: 150px;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.card-empresa
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 95%;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    box-shadow:  19px 19px 80px #c2bed9,
+    -20px -20px 60px #ffffff;   
+}
+
+.div1 > .img-empresa
+{
+    width: 80%;
+    height: 120px;
+    margin-top: 8%;
+    border-radius: 20px;
+    margin-left: 8%;
+}

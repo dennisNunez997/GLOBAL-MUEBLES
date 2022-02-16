@@ -1,0 +1,52 @@
+<ion-content class="ion-padding">
+
+  <div class="contenedor">
+    <div class="titulo">
+      <p>Iniciar Sesión</p>
+    </div>
+    <div class="login">
+      <form class="form" [formGroup]="validations_form" (ngSubmit)="loginUser(validations_form.value)">
+        <ion-item>
+          <ion-label position="floating"  color="primary">Correo Electrónico</ion-label>
+          <ion-input type="text" formControlName="email"></ion-input>
+        </ion-item>
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.email">
+            <div style="color: #eb445a;" class="error-message" *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+        <ion-item>
+          <ion-label  position="floating" color="primary">Contraseña</ion-label>
+          <ion-input [type]="passType" formControlName="password" class="form-controll" required>
+          </ion-input>
+          <ion-icon *ngIf="isDisabledPass" style="margin-top: auto; " (click)="showPassword()" slot="end" name="eye"></ion-icon>
+          <ion-icon *ngIf="!isDisabledPass" style="margin-top: auto; " (click)="hidePassword()"  slot="end" name="eye-off"></ion-icon>
+          
+        </ion-item> 
+        
+        <div class="validation-errors">
+          <ng-container *ngFor="let validation of validation_messages.password">
+            <div style="color: #eb445a;" class="error-message" *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+              {{ validation.message }}
+            </div>
+          </ng-container>
+        </div>
+        <ion-button style="font-family: 'Nunito Sans', sans-serif;" class="submit-btn" type="submit" [disabled]="!validations_form.valid" expand="block" fill="solid" size="default" color="primary">Entrar</ion-button>
+    
+        <label class="error-message">{{errorMessage}}</label>
+      </form>
+    </div>
+    <div class="password">
+      <div class="item1">        
+        <a style="text-align: center;" routerLink="/reset-password">Olvide mi contraseña</a>
+      </div>
+    </div>
+    <div class="register">
+      <div style="text-align: center; margin-top: 5%;" class="item2">        
+        <a  (click)="goToRegister()" >Crear una cuenta</a>
+      </div>
+    </div>
+  </div> 
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{categoria}}</ion-title>
+    <ion-button (click)="salir()" fill="clear" slot="end">
+      <ion-icon slot="end" name="close-circle-outline"></ion-icon>
+
+      Cerrar</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="searchbar">
+    <ion-searchbar animated (ionChange)="buscarProd( $event )"
+    ></ion-searchbar>
+  </div>
+  <div class="list-empresas">
+    <div *ngFor="let productos of productosDuplicados | filtroProd: textoBuscarCat: 'nombre_producto'" class="main">
+      <div (click)="categorySelected(productos.image_empresa, productos.nombre_producto, productos.empresa_proveedor)"  class="card-empresa">
+        <div class="div1">
+          <img class="img-empresa" [src]="productos.image_empresa">
+        </div>
+        <div class="div2">
+          <p style="color:#3880ff; font-size: 20px; ">{{productos.empresa_proveedor}}</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

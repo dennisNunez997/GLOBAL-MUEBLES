@@ -1,2 +1,2 @@
-# GLOBAL-MUEBLES
-Aplicación para comprar muebles de diferentes empresas
+# MuebleriaApp
+Aplicacion movil desarrollada en Ionic y Firebase destinada a la publicacion de productos de diferentes proveedores de muebles
